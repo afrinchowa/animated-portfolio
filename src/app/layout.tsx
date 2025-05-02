@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/shared/Header";
-import Footer from "@/components/shared/Footer";
+import { ThemeProvider } from "./provider";
 
 const roboto = Roboto({
   weight: "400",
@@ -11,9 +10,8 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "NexaBlog",
-  description:
-    "Welcome to NexaBlog – where innovation meets imagination in the dynamic realm of technology, offering a thrilling journey through the latest trends and groundbreaking discoveries in the world of tech!",
+  title: "Soya's Portfolio",
+  description:"Modern minimalist portfolio"
 };
 
 export default function RootLayout({
@@ -24,9 +22,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <Header />
-        <div className="min-h-screen">{children}</div>
-        <Footer />
+  
+        <div className="min-h-screen"> <ThemeProvider
+            attribute="class"
+            defaultTheme="dark"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {children}
+          </ThemeProvider></div>
+
       </body>
     </html>
   );
