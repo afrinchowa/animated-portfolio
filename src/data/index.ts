@@ -108,65 +108,55 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "I am proficient in core web technologies that form the foundation of any full-stack application.I use HTML5, CSS3, and Tailwind CSS to build responsive, clean, and accessible UIs.With JavaScript (ES6+), I develop interactive frontend components using React.js and manage global state efficiently with Redux Toolkit.For backend development, I use Node.js with Express.js to create RESTful APIs, handle server logic, and implement authentication systems.I also work with MongoDB as my main database solution, using it to structure and query flexible NoSQL data.",
+    name: "Level 1 Skills",
+    title: "Core Web Development",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Beyond the core, I work with modern frameworks and developer tools to enhance performance and scalability.I use Next.js to build server-rendered and statically generated applications.With TypeScript, I write strongly-typed, reliable code that prevents runtime errors.I implement secure JWT authentication, use React Hook Form for smooth form handling, and animate interfaces with Framer Motion.I also manage API integrations, deploy apps using Vercel or Netlify, and collaborate effectively using Git & GitHub.",
+    name: "Level 2 Skills",
+    title: "Expanding Tools & Frameworks",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Technical skills aside, I bring a strong set of soft skills that make me an effective team member and self-driven developer.I’m a proactive problem solver, quick to debug and optimize code.I value team collaboration, open communication, and continuous self-learning.I manage my time well, adapt quickly to new technologies, and take ownership of tasks from planning to deployment.These qualities help me thrive in fast-paced development environments and deliver high-quality work.",
+    name: "Soft Skills",
+    title: "Professional Attributes",
   },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
+ 
+  
 ];
 
 export const companies = [
   {
     id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
+    name: "NextJs",
+    img: "/next.svg",
+    // nameImg: "/cloudName.svg",
   },
   {
     id: 2,
-    name: "appwrite",
-    img: "/app.svg",
+    name: "Tailwind",
+    img: "/tail.svg",
     nameImg: "/appName.svg",
   },
   {
     id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
+    name: "NodeJS",
+    img: "/node.svg",
     nameImg: "/hostName.svg",
   },
   {
     id: 4,
-    name: "stream",
-    img: "/s.svg",
+    name: "MongoDB",
+    img: "/mongo.svg",
     nameImg: "/streamName.svg",
   },
   {
     id: 5,
-    name: "docker.",
-    img: "/dock.svg",
+    name: "React.",
+    img: "/re.svg",
     nameImg: "/dockerName.svg",
   },
 ];
@@ -174,29 +164,29 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Developer Intern",
-    desc: "Assisted in building responsive web UIs using React, HTML, CSS, and Tailwind.",
+    title: "The Future of Web Development: Trends to Watch in 2025",
+    desc: "Web development is constantly evolving, and keeping up with the latest trends is essential for any developer. In this blog post, we dive into the top web development trends expected to dominate the industry in 2025. From the rise of serverless architecture to advancements in AI-driven web development, learn how these trends will shape the way developers build modern applications.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Developer - JSM Tech",
-    desc: "Built cross-platform mobile apps using React Native and TypeScript.",
+    title: "Exploring the Intersection of Web Development and Artificial Intelligence",
+    desc: "The integration of AI with web development is one of the most exciting and transformative trends in the tech world. This post explores how artificial intelligence is enhancing the development process, from automated code generation to more intelligent user experiences. Discover the role of AI chatbots, recommendation systems, and personalized content delivery in shaping the future of web applications.",
     className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance Full-Stack Developer",
-    desc: "Developed full-stack web apps using Node.js, Express, and React for client projects.",
+    title: " Building Scalable Applications with Modern Web Technologies",
+    desc: "As businesses grow, the need for scalable web applications becomes more apparent. In this blog, we’ll cover the importance of building scalable apps and the modern technologies that help achieve this. Learn about using Node.js, React, Next.js, and cloud services to create applications that can scale effortlessly and meet the demands of millions of users., Express, and React for client projects.",
     className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Engineer",
-    desc: "Led frontend initiatives using Next.js, Redux, and modern UI frameworks.",
+    title: "How Today’s Tech World is Shaping the Future of Work",
+    desc: "Technology is revolutionizing the way we work, and its impact is felt across every industry. From remote work tools to AI-powered productivity apps, today’s tech world is reshaping our daily work lives. This blog explores how emerging technologies are not only changing how we perform tasks but also how we collaborate, communicate, and learn in professional settings.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
