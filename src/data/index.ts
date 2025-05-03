@@ -2,7 +2,8 @@ export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
   { name: "Testimonials", link: "#testimonials" },
-  { name: "Contact", link: "#contact" },
+  { name: "Contact", link: "/contactme" },
+  { name: "All Projects", link: "/AllProjects" }
 ];
 
 export const gridItems = [
@@ -38,7 +39,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Web developer passionate about building dynamic applications.",
+    title: "I'm a Final-year Software Engineering student skilled in full-stack development MERN and machine learning",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -133,7 +134,7 @@ export const companies = [
     id: 1,
     name: "NextJs",
     img: "/next.svg",
-    // nameImg: "/cloudName.svg",
+    nameImg: "/cloudName.svg",
   },
   {
     id: 2,
@@ -197,13 +198,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/afrinchowa"
   },
   {
     id: 2,
     img: "/twit.svg",
+        link: "https://www.facebook.com/arfin.ayra.1/"
   },
   {
     id: 3,
     img: "/link.svg",
+        link: "https://www.linkedin.com/in/moriomafrinchowa1/"
   },
 ];

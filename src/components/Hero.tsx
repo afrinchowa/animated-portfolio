@@ -46,8 +46,8 @@ const Hero = () => {
             Hi! I&apos;m Soya, a passionate Web Developer crafting modern and responsive websites from Bangladesh.
           </p>
 
-          <a href="#about">
-            <MagicButton title="Show my work" icon={<FaLocationArrow />} position="right" />
+          <a href="/resume">
+            <MagicButton title="Show my resume" icon={<FaLocationArrow />}  position="right" />
           </a>
         </div>
 
