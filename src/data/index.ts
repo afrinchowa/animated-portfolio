@@ -1,15 +1,15 @@
 export const navItems = [
   { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
   { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "/contactme" },
-  { name: "All Projects", link: "/AllProjects" }
+  { name: "All Projects", link: "/AllProjects" },
 ];
 
 export const gridItems = [
   {
     id: 1,
-    title: "I value client collaboration and transparent communication throughout development.",
+    title:
+      "I value client collaboration and transparent communication throughout development.",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -39,7 +39,8 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "I'm a Final-year Software Engineering student skilled in full-stack development MERN and machine learning",
+    title:
+      "I'm a Final-year Software Engineering student skilled in full-stack development MERN and machine learning",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -69,14 +70,20 @@ export const gridItems = [
   },
 ];
 
-
 export const projects = [
   {
     id: 1,
     title: "Cycle Sphere - A Bicycle Shop",
     des: "A full-featured, responsive bicycle e-commerce app with secure JWT-based authentication, dynamic product browsing, and role-based dashboards for admins and customers.",
     img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg","/redux.svg" ,"/mongo.svg","/next.svg"],
+    iconLists: [
+      "/re.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/redux.svg",
+      "/mongo.svg",
+      "/next.svg",
+    ],
     link: "https://cycle-sphere.vercel.app/",
   },
   {
@@ -84,7 +91,14 @@ export const projects = [
     title: "MediSphere - A Trusted Medicine Shop",
     des: "A secure and user-friendly medicine e-commerce platform with role-based access, JWT authentication, and real-time stock validation — built using the MERN stack.",
     img: "/p2.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg","/redux.svg" ,"/mongo.svg","/next.svg"],
+    iconLists: [
+      "/re.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/redux.svg",
+      "/mongo.svg",
+      "/next.svg",
+    ],
     link: "https://medi-sphere-five.vercel.app/shop",
   },
   {
@@ -92,7 +106,7 @@ export const projects = [
     title: "Palate Pioneer - A Restaurent Website",
     des: "A modern, responsive restaurant website featuring an interactive menu, reservation system, and visually rich UI — optimized for both desktop and mobile users.",
     img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/mongo.svg","/html.svg","/node.svg" ],
+    iconLists: ["/re.svg", "/tail.svg", "/mongo.svg", "/html.svg", "/node.svg"],
     link: "https://palate-pioneer-54ab1.firebaseapp.com/",
   },
   {
@@ -100,11 +114,16 @@ export const projects = [
     title: "Trifola - Ecommerce Website",
     des: "A sleek and scalable online brand store offering dynamic product listings, filterable categories, secure checkout, and admin management — powered by the MERN stack.",
     img: "/p4.svg",
-    iconLists: ["/css.svg", "/tail.svg", "/mongo.svg","/html.svg","/node.svg"],
+    iconLists: [
+      "/css.svg",
+      "/tail.svg",
+      "/mongo.svg",
+      "/html.svg",
+      "/node.svg",
+    ],
     link: "https://fashion-web-12c3a.web.app/",
   },
 ];
-
 
 export const testimonials = [
   {
@@ -125,8 +144,6 @@ export const testimonials = [
     name: "Soft Skills",
     title: "Professional Attributes",
   },
- 
-  
 ];
 
 export const companies = [
@@ -172,7 +189,8 @@ export const workExperience = [
   },
   {
     id: 2,
-    title: "Exploring the Intersection of Web Development and Artificial Intelligence",
+    title:
+      "Exploring the Intersection of Web Development and Artificial Intelligence",
     desc: "The integration of AI with web development is one of the most exciting and transformative trends in the tech world. This post explores how artificial intelligence is enhancing the development process, from automated code generation to more intelligent user experiences. Discover the role of AI chatbots, recommendation systems, and personalized content delivery in shaping the future of web applications.",
     className: "md:col-span-2",
     thumbnail: "/exp2.svg",
@@ -193,21 +211,20 @@ export const workExperience = [
   },
 ];
 
-
 export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
-    link: "https://github.com/afrinchowa"
+    link: "https://github.com/afrinchowa",
   },
   {
     id: 2,
     img: "/twit.svg",
-        link: "https://www.facebook.com/arfin.ayra.1/"
+    link: "https://www.facebook.com/arfin.ayra.1/",
   },
   {
     id: 3,
     img: "/link.svg",
-        link: "https://www.linkedin.com/in/moriomafrinchowa1/"
+    link: "https://www.linkedin.com/in/moriomafrinchowa1/",
   },
 ];
