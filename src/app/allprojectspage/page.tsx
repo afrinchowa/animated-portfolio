@@ -1,5 +1,7 @@
-import ProjectList from "@/components/ProjectModal"; // adjust path
+ // adjust path
+
+import AllProjects from "../AllProjects/page";
 
 export default function AllProjectsPage() {
-  return <ProjectList />;
+  return <AllProjects />;
 }

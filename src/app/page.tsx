@@ -1,12 +1,12 @@
 export const dynamic = "force-dynamic";
 
 import Approach from "@/components/Approach";
-import Clients from "@/components/Clients";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import RecentProjects from "@/components/RecentProjects";
+import Skills from "@/components/Skills";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { navItems } from "@/data";
 
@@ -18,7 +18,7 @@ const HomePage = () => {
         <Hero />
         <Grid />
         <RecentProjects />
-        <Clients />
+        <Skills/>
         <Experience />
         <Approach />
         <Footer />

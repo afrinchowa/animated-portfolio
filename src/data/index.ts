@@ -1,6 +1,6 @@
 export const navItems = [
   { name: "About", link: "#about" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "Skills", link: "#skills" },
   { name: "Contact", link: "/contactme" },
   { name: "All Projects", link: "/AllProjects" },
 ];
@@ -73,6 +73,8 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
+    screenshots: ["/p1.1.png", "/p1.2.png", "/p1.3.png"],
+
     title: "Cycle Sphere - A Bicycle Shop",
     des: "A full-featured, responsive bicycle e-commerce app with secure JWT-based authentication, dynamic product browsing, and role-based dashboards for admins and customers.",
     img: "/p1.svg",
@@ -85,12 +87,33 @@ export const projects = [
       "/next.svg",
     ],
     link: "https://cycle-sphere.vercel.app/",
+    overview: "Cycle Sphere is a responsive bicycle e-commerce platform offering dynamic product listings, cart functionality, and role-based dashboards for Admins and Customers.",
+    technologies: ["React", "Tailwind CSS", "TypeScript", "Redux", "MongoDB", "Next.js"],
+    features: [
+      "JWT-based secure login/signup",
+      "Role-based dashboard for Admin and Customer",
+      "Add/Edit/Delete bicycle products",
+      "Dynamic filtering and search",
+      "Responsive UI with Tailwind CSS"
+    ],
+    challenges: [
+      "Implementing role-based access control",
+      "Managing JWT authentication and token expiration",
+      "Handling nested dashboard routing"
+    ],
+    futurePlans: [
+      "Add Stripe payment integration",
+      "Enable product reviews and ratings",
+      "Implement email verification and notifications"
+    ]
   },
   {
     id: 2,
+    screenshots: ["/p2.1.png", "/p2.2.png", "/p2.3.png"],
+
     title: "MediSphere - A Trusted Medicine Shop",
     des: "A secure and user-friendly medicine e-commerce platform with role-based access, JWT authentication, and real-time stock validation — built using the MERN stack.",
-    img: "/p2.svg",
+    img: "/p2.png",
     iconLists: [
       "/re.svg",
       "/tail.svg",
@@ -100,17 +123,57 @@ export const projects = [
       "/next.svg",
     ],
     link: "https://medi-sphere-five.vercel.app/shop",
+    overview: "MediSphere simplifies the medicine-buying experience with real-time stock validation, secure login, and user/admin dashboard features tailored for healthcare products.",
+    technologies: ["React", "Tailwind CSS", "TypeScript", "Redux", "MongoDB", "Next.js"],
+    features: [
+      "JWT-based secure authentication",
+      "Admin panel to manage inventory and orders",
+      "Real-time stock validation before checkout",
+      "Responsive design with dynamic product cards"
+    ],
+    challenges: [
+      "Stock consistency with backend logic",
+      "Dynamic route handling for individual products",
+      "Dashboard-level routing for Admin vs Customer"
+    ],
+    futurePlans: [
+      "Add prescription upload system",
+      "Integrate a chatbot for medicine inquiries",
+      "Implement delivery tracking feature"
+    ]
   },
   {
     id: 3,
-    title: "Palate Pioneer - A Restaurent Website",
+    screenshots: ["/p3.svg", "/p3.2.png", "/p3.3.png"],
+
+    title: "Palate Pioneer - A Restaurant Website",
     des: "A modern, responsive restaurant website featuring an interactive menu, reservation system, and visually rich UI — optimized for both desktop and mobile users.",
-    img: "/p3.svg",
+    img: "/p3.1.png",
     iconLists: ["/re.svg", "/tail.svg", "/mongo.svg", "/html.svg", "/node.svg"],
     link: "https://palate-pioneer-54ab1.firebaseapp.com/",
+    overview: "Palate Pioneer provides an immersive dining experience with interactive menus, booking forms, and customer reviews built with a clean modern layout.",
+    technologies: ["React", "Tailwind CSS", "MongoDB", "HTML", "Node.js"],
+    features: [
+      "Interactive food menu with filters",
+      "Table reservation form with validation",
+      "Fully responsive layout for all devices",
+      "Firebase hosting and deployment"
+    ],
+    challenges: [
+      "Designing a visually appealing layout",
+      "Managing dynamic restaurant data",
+      "Responsive styling for small screens"
+    ],
+    futurePlans: [
+      "Enable online food ordering",
+      "Add review and rating system",
+      "Admin dashboard for menu and booking control"
+    ]
   },
   {
     id: 4,
+    screenshots: ["/p4.1.png", "/p4.2.png", "/p4.3.png"],
+
     title: "Trifola - Ecommerce Website",
     des: "A sleek and scalable online brand store offering dynamic product listings, filterable categories, secure checkout, and admin management — powered by the MERN stack.",
     img: "/p4.svg",
@@ -122,29 +185,65 @@ export const projects = [
       "/node.svg",
     ],
     link: "https://fashion-web-12c3a.web.app/",
+    overview: "Trifola is an online fashion marketplace offering category filtering, admin product control, and a secure shopping experience using a robust backend.",
+    technologies: ["HTML", "CSS", "Tailwind CSS", "MongoDB", "Node.js"],
+    features: [
+      "Dynamic product categories and filters",
+      "Secure checkout with cart management",
+      "Admin panel for product control",
+      "SEO-friendly product pages"
+    ],
+    challenges: [
+      "Managing responsive layouts for multiple categories",
+      "Creating reusable components for product cards",
+      "Integrating admin control without auth library"
+    ],
+    futurePlans: [
+      "Implement payment gateway",
+      "Integrate social login",
+      "Add newsletter and marketing tools"
+    ]
   },
 ];
 
-export const testimonials = [
+
+export const skills = [
   {
-    quote:
-      "I am proficient in core web technologies that form the foundation of any full-stack application.I use HTML5, CSS3, and Tailwind CSS to build responsive, clean, and accessible UIs.With JavaScript (ES6+), I develop interactive frontend components using React.js and manage global state efficiently with Redux Toolkit.For backend development, I use Node.js with Express.js to create RESTful APIs, handle server logic, and implement authentication systems.I also work with MongoDB as my main database solution, using it to structure and query flexible NoSQL data.",
-    name: "Level 1 Skills",
+    level: "Level 1",
     title: "Core Web Development",
+    items: [
+      "HTML5, CSS3, Tailwind CSS",
+      "JavaScript (ES6+), React.js",
+      "Redux Toolkit",
+      "Node.js & Express",
+      "MongoDB",
+    ].join(" • "),
   },
   {
-    quote:
-      "Beyond the core, I work with modern frameworks and developer tools to enhance performance and scalability.I use Next.js to build server-rendered and statically generated applications.With TypeScript, I write strongly-typed, reliable code that prevents runtime errors.I implement secure JWT authentication, use React Hook Form for smooth form handling, and animate interfaces with Framer Motion.I also manage API integrations, deploy apps using Vercel or Netlify, and collaborate effectively using Git & GitHub.",
-    name: "Level 2 Skills",
-    title: "Expanding Tools & Frameworks",
+    level: "Level 2",
+    title: "Tools & Frameworks",
+    items: [
+      "Next.js & TypeScript",
+      "JWT Authentication",
+      "React Hook Form",
+      "Framer Motion",
+      "Git, GitHub, Vercel, Netlify",
+    ].join(" • "),
   },
   {
-    quote:
-      "Technical skills aside, I bring a strong set of soft skills that make me an effective team member and self-driven developer.I’m a proactive problem solver, quick to debug and optimize code.I value team collaboration, open communication, and continuous self-learning.I manage my time well, adapt quickly to new technologies, and take ownership of tasks from planning to deployment.These qualities help me thrive in fast-paced development environments and deliver high-quality work.",
-    name: "Soft Skills",
+    level: "Soft Skills",
     title: "Professional Attributes",
+    items: [
+      "Debugging & Optimization",
+      "Team Collaboration",
+      "Fast Learner",
+      "Communication Skills",
+      "Time Management",
+    ].join(" • "),
   },
 ];
+
+
 
 export const companies = [
   {
