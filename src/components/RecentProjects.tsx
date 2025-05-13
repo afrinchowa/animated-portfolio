@@ -1,13 +1,29 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { FaLocationArrow } from "react-icons/fa6";
+import { useState } from "react";
 import { projects } from "@/data";
 
-import Link from "next/link";
 import MagicButton from "./MagicButton";
+import Modal from "./ProjectModal";
+
 
 const RecentProjects = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  const openModal = (project: any) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedProject(null);
+  };
+
   return (
     <div className="py-20 relative z-0">
       <h1 className="heading text-center">
@@ -49,17 +65,26 @@ const RecentProjects = () => {
             </div>
 
             <div className="flex justify-end">
-              <Link href={`/projects/${item.id}`}>
+              <button onClick={() => openModal(item)}>
                 <MagicButton
                   title="View Details"
                   icon={<FaLocationArrow />}
                   position="right"
                 />
-              </Link>
+              </button>
             </div>
           </div>
         ))}
       </div>
+
+      {/* Modal */}
+      {selectedProject && (
+        <Modal
+          isOpen={isModalOpen}
+          onClose={closeModal}
+          project={selectedProject}
+        />
+      )}
     </div>
   );
 };

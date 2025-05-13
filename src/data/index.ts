@@ -72,7 +72,7 @@ export const gridItems = [
 
 export const projects = [
   {
-    id: 1,
+    id: "1",
     screenshots: ["/p1.1.png", "/p1.2.png", "/p1.3.png"],
 
     title: "Cycle Sphere - A Bicycle Shop",
@@ -87,28 +87,36 @@ export const projects = [
       "/next.svg",
     ],
     link: "https://cycle-sphere.vercel.app/",
-    overview: "Cycle Sphere is a responsive bicycle e-commerce platform offering dynamic product listings, cart functionality, and role-based dashboards for Admins and Customers.",
-    technologies: ["React", "Tailwind CSS", "TypeScript", "Redux", "MongoDB", "Next.js"],
+    overview:
+      "Cycle Sphere is a responsive bicycle e-commerce platform offering dynamic product listings, cart functionality, and role-based dashboards for Admins and Customers.",
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "TypeScript",
+      "Redux",
+      "MongoDB",
+      "Next.js",
+    ],
     features: [
       "JWT-based secure login/signup",
       "Role-based dashboard for Admin and Customer",
       "Add/Edit/Delete bicycle products",
       "Dynamic filtering and search",
-      "Responsive UI with Tailwind CSS"
+      "Responsive UI with Tailwind CSS",
     ],
     challenges: [
       "Implementing role-based access control",
       "Managing JWT authentication and token expiration",
-      "Handling nested dashboard routing"
+      "Handling nested dashboard routing",
     ],
     futurePlans: [
       "Add Stripe payment integration",
       "Enable product reviews and ratings",
-      "Implement email verification and notifications"
-    ]
+      "Implement email verification and notifications",
+    ],
   },
   {
-    id: 2,
+    id: "2",
     screenshots: ["/p2.1.png", "/p2.2.png", "/p2.3.png"],
 
     title: "MediSphere - A Trusted Medicine Shop",
@@ -123,27 +131,35 @@ export const projects = [
       "/next.svg",
     ],
     link: "https://medi-sphere-five.vercel.app/shop",
-    overview: "MediSphere simplifies the medicine-buying experience with real-time stock validation, secure login, and user/admin dashboard features tailored for healthcare products.",
-    technologies: ["React", "Tailwind CSS", "TypeScript", "Redux", "MongoDB", "Next.js"],
+    overview:
+      "MediSphere simplifies the medicine-buying experience with real-time stock validation, secure login, and user/admin dashboard features tailored for healthcare products.",
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "TypeScript",
+      "Redux",
+      "MongoDB",
+      "Next.js",
+    ],
     features: [
       "JWT-based secure authentication",
       "Admin panel to manage inventory and orders",
       "Real-time stock validation before checkout",
-      "Responsive design with dynamic product cards"
+      "Responsive design with dynamic product cards",
     ],
     challenges: [
       "Stock consistency with backend logic",
       "Dynamic route handling for individual products",
-      "Dashboard-level routing for Admin vs Customer"
+      "Dashboard-level routing for Admin vs Customer",
     ],
     futurePlans: [
       "Add prescription upload system",
       "Integrate a chatbot for medicine inquiries",
-      "Implement delivery tracking feature"
-    ]
+      "Implement delivery tracking feature",
+    ],
   },
   {
-    id: 3,
+    id: "3",
     screenshots: ["/p3.svg", "/p3.2.png", "/p3.3.png"],
 
     title: "Palate Pioneer - A Restaurant Website",
@@ -151,27 +167,28 @@ export const projects = [
     img: "/p3.1.png",
     iconLists: ["/re.svg", "/tail.svg", "/mongo.svg", "/html.svg", "/node.svg"],
     link: "https://palate-pioneer-54ab1.firebaseapp.com/",
-    overview: "Palate Pioneer provides an immersive dining experience with interactive menus, booking forms, and customer reviews built with a clean modern layout.",
+    overview:
+      "Palate Pioneer provides an immersive dining experience with interactive menus, booking forms, and customer reviews built with a clean modern layout.",
     technologies: ["React", "Tailwind CSS", "MongoDB", "HTML", "Node.js"],
     features: [
       "Interactive food menu with filters",
       "Table reservation form with validation",
       "Fully responsive layout for all devices",
-      "Firebase hosting and deployment"
+      "Firebase hosting and deployment",
     ],
     challenges: [
       "Designing a visually appealing layout",
       "Managing dynamic restaurant data",
-      "Responsive styling for small screens"
+      "Responsive styling for small screens",
     ],
     futurePlans: [
       "Enable online food ordering",
       "Add review and rating system",
-      "Admin dashboard for menu and booking control"
-    ]
+      "Admin dashboard for menu and booking control",
+    ],
   },
   {
-    id: 4,
+    id: "4",
     screenshots: ["/p4.1.png", "/p4.2.png", "/p4.3.png"],
 
     title: "Trifola - Ecommerce Website",
@@ -185,27 +202,27 @@ export const projects = [
       "/node.svg",
     ],
     link: "https://fashion-web-12c3a.web.app/",
-    overview: "Trifola is an online fashion marketplace offering category filtering, admin product control, and a secure shopping experience using a robust backend.",
+    overview:
+      "Trifola is an online fashion marketplace offering category filtering, admin product control, and a secure shopping experience using a robust backend.",
     technologies: ["HTML", "CSS", "Tailwind CSS", "MongoDB", "Node.js"],
     features: [
       "Dynamic product categories and filters",
       "Secure checkout with cart management",
       "Admin panel for product control",
-      "SEO-friendly product pages"
+      "SEO-friendly product pages",
     ],
     challenges: [
       "Managing responsive layouts for multiple categories",
       "Creating reusable components for product cards",
-      "Integrating admin control without auth library"
+      "Integrating admin control without auth library",
     ],
     futurePlans: [
       "Implement payment gateway",
       "Integrate social login",
-      "Add newsletter and marketing tools"
-    ]
+      "Add newsletter and marketing tools",
+    ],
   },
 ];
-
 
 export const skills = [
   {
@@ -242,8 +259,6 @@ export const skills = [
     ].join(" • "),
   },
 ];
-
-
 
 export const companies = [
   {

@@ -1,41 +1,52 @@
 /* eslint-disable @next/next/no-img-element */
-import { notFound } from "next/navigation";
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import React, { useEffect } from "react";
 import { FaLocationArrow } from "react-icons/fa6";
 import { MdOutlineCheckCircle } from "react-icons/md";
-import { projects } from "@/data";  // Your data source
 
-interface Params {
-  id: string;
-}
+// Modal Component to display Project details
+const ProjectModal = ({ project, onClose, isOpen }: { project: any; onClose: () => void; isOpen: boolean }) => {
+  useEffect(() => {
+    if (isOpen) {
+      // Disable scroll on body when modal is open
+      document.body.style.overflow = "hidden";
+    } else {
+      // Enable scroll when modal is closed
+      document.body.style.overflow = "auto";
+    }
 
-interface PageProps {
-  params: Params;
-}
+    // Cleanup on component unmount or modal close
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isOpen]);
 
-const ProjectDetailsPage = async ({ params }: PageProps) => {
-  // Fetch project data based on the id
-  const project = projects.find((p) => p.id.toString() === params.id);
-
-  // If project is not found, show a 404 page
-  if (!project) {
-    return notFound();
-  }
+  if (!isOpen || !project) return null;
 
   return (
-    <div className="min-h-screen bg-[#0f0f1b] text-white p-6">
-      <div className="max-w-5xl mx-auto">
+    <div className="fixed inset-0 bg-black bg-opacity-70 z-50 flex justify-center items-center">
+      <div className="bg-[#0f0f1b] text-white p-6 rounded-xl max-w-6xl w-full h-full overflow-auto">
+        {/* Modal Header */}
+        <div className="flex justify-between items-center mb-6">
+          <h1 className="text-4xl font-bold">{project.title}</h1>
+          <button onClick={onClose} className="text-white text-xl font-semibold">
+            X
+          </button>
+        </div>
+
         {/* Hero Image */}
         <img
           src={project.img}
           alt="Project Hero"
           className="w-full rounded-xl shadow-lg mb-8"
         />
-        {/* Title */}
-        <h1 className="text-4xl font-bold mb-4">{project.title}</h1>
+
+        {/* Overview */}
         <p className="text-lg text-gray-300 mb-8">{project.overview}</p>
+
         {/* Tech Icons */}
         <div className="flex gap-3 mb-6 flex-wrap">
-          {project.iconLists.map((icon, idx) => (
+          {project.iconLists.map((icon: string, idx: number) => (
             <img
               key={idx}
               src={icon}
@@ -44,10 +55,11 @@ const ProjectDetailsPage = async ({ params }: PageProps) => {
             />
           ))}
         </div>
+
         {/* Screenshots Grid */}
         {project.screenshots && (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
-            {project.screenshots.map((src, i) => (
+            {project.screenshots.map((src: string, i: number) => (
               <img
                 key={i}
                 src={src}
@@ -57,6 +69,7 @@ const ProjectDetailsPage = async ({ params }: PageProps) => {
             ))}
           </div>
         )}
+
         {/* Details Sections */}
         <div className="space-y-8 bg-white/5 p-6 rounded-xl shadow-xl">
           <Section title="Technologies Used" items={project.technologies} />
@@ -64,6 +77,7 @@ const ProjectDetailsPage = async ({ params }: PageProps) => {
           <Section title="Major Challenges" items={project.challenges} />
           <Section title="Future Plans" items={project.futurePlans} />
         </div>
+
         {/* Visit Site Button */}
         <div className="mt-10">
           <a
@@ -95,4 +109,4 @@ const Section = ({ title, items }: { title: string; items: string[] }) => (
   </div>
 );
 
-export default ProjectDetailsPage;
+export default ProjectModal;
